@@ -46,33 +46,36 @@ const TestimonialsSection = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={testimonial.name}
-              className="bg-card p-8 rounded-lg border border-border relative hover-lift opacity-0 animate-fade-in-up"
+              className="group bg-card p-8 rounded-lg border border-border relative hover-lift opacity-0 animate-fade-in-up transition-all duration-500 hover:border-gold/30 hover:shadow-xl"
               style={{ animationDelay: `${0.15 * (index + 1)}s` }}
             >
               {/* Quote Icon */}
-              <Quote className="absolute top-6 right-6 text-accent/20" size={40} />
+              <Quote className="absolute top-6 right-6 text-accent/20 transition-all duration-500 group-hover:text-gold/40 group-hover:scale-110 group-hover:rotate-12" size={40} />
               
               {/* Rating */}
               <div className="flex gap-1 mb-4">
                 {Array.from({ length: testimonial.rating }).map((_, i) => (
-                  <Star key={i} size={16} className="fill-gold text-gold" />
+                  <Star key={i} size={16} className="fill-gold text-gold transition-transform duration-300 hover:scale-125" style={{ transitionDelay: `${i * 50}ms` }} />
                 ))}
               </div>
               
               {/* Content */}
-              <p className="text-foreground/80 leading-relaxed mb-6">
+              <p className="text-foreground/80 leading-relaxed mb-6 transition-colors duration-300 group-hover:text-foreground">
                 "{testimonial.content}"
               </p>
               
               {/* Author */}
               <div className="flex items-center gap-4">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="w-12 h-12 rounded-full object-cover"
-                />
+                <div className="relative overflow-hidden rounded-full">
+                  <img
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    className="w-12 h-12 rounded-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gold/0 transition-colors duration-300 group-hover:bg-gold/10 rounded-full" />
+                </div>
                 <div>
-                  <p className="font-display font-semibold text-foreground">
+                  <p className="font-display font-semibold text-foreground transition-colors duration-300 group-hover:text-primary">
                     {testimonial.name}
                   </p>
                   <p className="text-sm text-muted-foreground">{testimonial.role}</p>

@@ -45,16 +45,16 @@ const WhyChooseUsSection = () => {
           {features.map((feature, index) => (
             <div
               key={feature.title}
-              className="text-center p-8 rounded-lg bg-card border border-border hover-lift opacity-0 animate-fade-in"
+              className="group text-center p-8 rounded-lg bg-card border border-border hover-lift opacity-0 animate-fade-in transition-all duration-500 hover:border-gold/50 hover:shadow-xl"
               style={{ animationDelay: `${0.1 * (index + 1)}s` }}
             >
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent/10 text-accent mb-6">
-                <feature.icon size={28} />
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent/10 text-accent mb-6 transition-all duration-500 group-hover:bg-gold/20 group-hover:scale-110 group-hover:rotate-6">
+                <feature.icon size={28} className="transition-transform duration-300 group-hover:scale-110" />
               </div>
-              <h3 className="font-display text-xl font-semibold text-foreground mb-3">
+              <h3 className="font-display text-xl font-semibold text-foreground mb-3 transition-colors duration-300 group-hover:text-primary">
                 {feature.title}
               </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <p className="text-muted-foreground text-sm leading-relaxed transition-colors duration-300 group-hover:text-foreground/80">
                 {feature.description}
               </p>
             </div>

@@ -55,28 +55,33 @@ const CategoriesSection = () => {
             <Link
               key={category.slug}
               to={`/products?category=${category.slug}`}
-              className="group relative overflow-hidden rounded-lg aspect-[3/4] hover-lift opacity-0 animate-fade-in-up"
+              className="group relative overflow-hidden rounded-lg aspect-[3/4] hover-lift opacity-0 animate-fade-in-up shadow-lg hover:shadow-2xl transition-shadow duration-500"
               style={{ animationDelay: `${0.1 * (index + 1)}s` }}
             >
               {/* Background Image */}
               <div
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                className="absolute inset-0 bg-cover bg-center transition-all duration-700 group-hover:scale-110 group-hover:rotate-1"
                 style={{ backgroundImage: `url('${category.image}')` }}
               />
               
+              {/* Shimmer Effect */}
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer" />
+              </div>
+              
               {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-brown-dark/90 via-brown-dark/40 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-brown-dark/90 via-brown-dark/40 to-transparent transition-all duration-500 group-hover:from-brown-dark/95" />
               
               {/* Content */}
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                 <div className="flex items-center gap-3 mb-2">
-                  <category.icon size={24} className="text-gold" />
-                  <h3 className="font-display text-xl font-semibold">{category.name}</h3>
+                  <category.icon size={24} className="text-gold transition-transform duration-300 group-hover:scale-125 group-hover:rotate-12" />
+                  <h3 className="font-display text-xl font-semibold transition-transform duration-300 group-hover:translate-x-1">{category.name}</h3>
                 </div>
-                <p className="text-white/70 text-sm">{category.description}</p>
+                <p className="text-white/70 text-sm transition-all duration-300 group-hover:text-white/90">{category.description}</p>
                 <div className="mt-4 flex items-center gap-2 text-gold text-sm font-medium opacity-0 transform translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
                   Explore Collection
-                  <span className="transition-transform group-hover:translate-x-1">→</span>
+                  <span className="transition-transform group-hover:translate-x-2">→</span>
                 </div>
               </div>
             </Link>

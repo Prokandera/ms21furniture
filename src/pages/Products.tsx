@@ -172,34 +172,40 @@ const Products = () => {
             {filteredProducts.map((product, index) => (
               <div
                 key={product.id}
-                className="group bg-card rounded-lg overflow-hidden border border-border hover-lift opacity-0 animate-fade-in-up"
+                className="group bg-card rounded-lg overflow-hidden border border-border hover-lift opacity-0 animate-fade-in-up transition-all duration-500 hover:border-gold/30 hover:shadow-2xl"
                 style={{ animationDelay: `${0.05 * (index + 1)}s` }}
               >
                 {/* Image */}
-                <div className="aspect-[4/3] overflow-hidden">
+                <div className="aspect-[4/3] overflow-hidden relative">
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:rotate-1"
                   />
+                  {/* Overlay on hover */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-brown-dark/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  {/* Shimmer Effect */}
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/25 to-transparent animate-shimmer" />
+                  </div>
                 </div>
                 
                 {/* Content */}
                 <div className="p-6">
-                  <p className="text-xs text-accent font-medium uppercase tracking-wider mb-2">
+                  <p className="text-xs text-accent font-medium uppercase tracking-wider mb-2 transition-colors duration-300 group-hover:text-gold">
                     {categories.find((c) => c.id === product.category)?.name}
                   </p>
-                  <h3 className="font-display text-xl font-semibold text-foreground mb-2">
+                  <h3 className="font-display text-xl font-semibold text-foreground mb-2 transition-colors duration-300 group-hover:text-primary">
                     {product.name}
                   </h3>
-                  <p className="text-muted-foreground text-sm mb-4">
+                  <p className="text-muted-foreground text-sm mb-4 transition-colors duration-300 group-hover:text-foreground/80">
                     {product.description}
                   </p>
                   <div className="flex items-center justify-between">
-                    <span className="font-display text-2xl font-bold text-primary">
+                    <span className="font-display text-2xl font-bold text-primary transition-transform duration-300 group-hover:scale-105">
                       ${product.price.toLocaleString()}
                     </span>
-                    <Button variant="outline" size="sm">
+                    <Button variant="outline" size="sm" className="transition-all duration-300 group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary">
                       View Details
                     </Button>
                   </div>
