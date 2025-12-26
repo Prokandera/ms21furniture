@@ -201,14 +201,9 @@ const Products = () => {
                   <p className="text-muted-foreground text-sm mb-4 transition-colors duration-300 group-hover:text-foreground/80">
                     {product.description}
                   </p>
-                  <div className="flex items-center justify-between">
-                    <span className="font-display text-2xl font-bold text-primary transition-transform duration-300 group-hover:scale-105">
-                      ₹{product.price.toLocaleString('en-IN')}
-                    </span>
-                    <Button variant="outline" size="sm" className="transition-all duration-300 group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary">
-                      View Details
-                    </Button>
-                  </div>
+                  <span className="font-display text-2xl font-bold text-primary transition-transform duration-300 group-hover:scale-105">
+                    ₹{product.price.toLocaleString('en-IN')}
+                  </span>
                 </div>
               </div>
             ))}
