@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="font-display text-2xl font-bold">MS Furnitures</h3>
+            <h3 className="font-display text-2xl font-bold">MS21 Furnitures</h3>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
               Crafting Comfort for Your Home. Premium quality furniture designed to transform your living spaces into beautiful sanctuaries.
             </p>
@@ -79,7 +79,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3 text-sm">
                 <Mail size={18} className="text-gold flex-shrink-0" />
-                <span className="text-primary-foreground/80">info@msfurnitures.com</span>
+                <span className="text-primary-foreground/80">info@ms21furnitures.com</span>
               </div>
               <div className="flex items-start gap-3 text-sm">
                 <Clock size={18} className="text-gold mt-0.5 flex-shrink-0" />
@@ -95,7 +95,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-primary-foreground/20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/60">
-            <p>© {new Date().getFullYear()} MS Furnitures. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} MS21 Furnitures. All rights reserved.</p>
             <div className="flex gap-6">
               <a href="#" className="hover:text-gold transition-colors">Privacy Policy</a>
               <a href="#" className="hover:text-gold transition-colors">Terms of Service</a>

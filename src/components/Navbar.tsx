@@ -23,7 +23,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <span className="font-display text-2xl md:text-3xl font-bold text-primary">
-              MS Furnitures
+              MS21 Furnitures
             </span>
           </Link>
 
