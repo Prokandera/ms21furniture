@@ -9,7 +9,7 @@ const features = [
   {
     icon: Truck,
     title: "Free Delivery",
-    description: "Enjoy complimentary delivery and professional assembly on all orders over $500.",
+    description: "Enjoy complimentary delivery and professional assembly on all orders over ₹10,000.",
   },
   {
     icon: ShieldCheck,

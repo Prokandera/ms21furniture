@@ -203,7 +203,7 @@ const Products = () => {
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="font-display text-2xl font-bold text-primary transition-transform duration-300 group-hover:scale-105">
-                      ${product.price.toLocaleString()}
+                      ₹{product.price.toLocaleString('en-IN')}
                     </span>
                     <Button variant="outline" size="sm" className="transition-all duration-300 group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary">
                       View Details
