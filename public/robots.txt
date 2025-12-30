@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ms21furniture.vercel.app/sitemap.xml
+Sitemap: https://www.ms21furnitures.com/sitemap.xml
+
 
