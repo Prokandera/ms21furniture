@@ -70,16 +70,16 @@ const Footer = () => {
               <div className="flex items-start gap-3 text-sm">
                 <MapPin size={18} className="text-gold mt-0.5 flex-shrink-0" />
                 <span className="text-primary-foreground/80">
-                  123 Furniture Lane, Design District, City 12345
+                  18-A , East Laxmi Market, Gali No. 1, Laxmi Nagar, Delhi-110092 (Main Khureji Red Light)
                 </span>
               </div>
               <div className="flex items-center gap-3 text-sm">
                 <Phone size={18} className="text-gold flex-shrink-0" />
-                <span className="text-primary-foreground/80">+1 (555) 123-4567</span>
+                <span className="text-primary-foreground/80">+91 7409164070 , +91 7845576935 , +91 9355664070 (OFF.)</span>
               </div>
               <div className="flex items-center gap-3 text-sm">
                 <Mail size={18} className="text-gold flex-shrink-0" />
-                <span className="text-primary-foreground/80">info@ms21furnitures.com</span>
+                <span className="text-primary-foreground/80">Let U Know Soon</span>
               </div>
               <div className="flex items-start gap-3 text-sm">
                 <Clock size={18} className="text-gold mt-0.5 flex-shrink-0" />

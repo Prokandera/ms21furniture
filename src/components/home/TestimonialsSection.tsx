@@ -2,25 +2,24 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Sarah Mitchell",
+    name: "Yash Arora",
     role: "Interior Designer",
     content: "MS21 Furnitures exceeded all my expectations. The quality of their pieces is outstanding, and the customer service was impeccable. My clients absolutely love the furniture we've selected.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop",
   },
   {
-    name: "Michael Chen",
+    name: "Hardik Chadha",
     role: "Homeowner",
     content: "We furnished our entire living room with MS21 Furnitures, and the transformation is incredible. The craftsmanship is evident in every detail. Worth every penny!",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop",
+    image: "",
   },
   {
-    name: "Emily Rodriguez",
+    name: "Ali Naqvi",
     role: "Architect",
     content: "The attention to detail and commitment to quality at MS21 Furnitures is remarkable. They've become my go-to recommendation for all my residential projects.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&auto=format&fit=crop",
+    image: "",
   },
 ];
 

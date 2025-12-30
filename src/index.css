@@ -1,151 +1,81 @@
+/* ✅ IMPORT MUST BE FIRST */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* MS21 Furnitures Design System - Warm & Luxurious with Classic Brown & Cream */
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap');
-
 @layer base {
-  :root {
-    /* Warm Cream Background */
-    --background: 40 33% 97%;
-    --foreground: 25 30% 15%;
-
-    /* Card - Soft cream */
-    --card: 40 40% 95%;
-    --card-foreground: 25 30% 15%;
-
-    /* Popover */
-    --popover: 40 40% 98%;
-    --popover-foreground: 25 30% 15%;
-
-    /* Primary - Rich chocolate brown */
-    --primary: 25 45% 25%;
-    --primary-foreground: 40 40% 98%;
-
-    /* Secondary - Warm taupe */
-    --secondary: 30 20% 88%;
-    --secondary-foreground: 25 30% 20%;
-
-    /* Muted - Soft beige */
-    --muted: 35 25% 92%;
-    --muted-foreground: 25 15% 45%;
-
-    /* Accent - Golden brown */
-    --accent: 35 55% 45%;
-    --accent-foreground: 40 40% 98%;
-
-    /* Destructive */
-    --destructive: 0 65% 50%;
-    --destructive-foreground: 40 40% 98%;
-
-    /* Border & Input */
-    --border: 30 25% 85%;
-    --input: 30 25% 85%;
-    --ring: 25 45% 25%;
-
-    --radius: 0.5rem;
-
-    /* Custom tokens */
-    --cream: 40 40% 96%;
-    --cream-dark: 35 30% 90%;
-    --brown-light: 30 35% 40%;
-    --brown-dark: 25 40% 18%;
-    --gold: 38 60% 50%;
-    --gold-muted: 38 40% 75%;
-
-    /* Sidebar */
-    --sidebar-background: 25 40% 18%;
-    --sidebar-foreground: 40 40% 95%;
-    --sidebar-primary: 38 60% 50%;
-    --sidebar-primary-foreground: 25 40% 18%;
-    --sidebar-accent: 25 35% 25%;
-    --sidebar-accent-foreground: 40 40% 95%;
-    --sidebar-border: 25 30% 25%;
-    --sidebar-ring: 38 60% 50%;
-  }
-
-  .dark {
-    --background: 25 40% 10%;
-    --foreground: 40 40% 95%;
-
-    --card: 25 35% 14%;
-    --card-foreground: 40 40% 95%;
-
-    --popover: 25 35% 12%;
-    --popover-foreground: 40 40% 95%;
-
-    --primary: 38 55% 55%;
-    --primary-foreground: 25 40% 10%;
-
-    --secondary: 25 30% 20%;
-    --secondary-foreground: 40 40% 95%;
-
-    --muted: 25 25% 18%;
-    --muted-foreground: 35 20% 60%;
-
-    --accent: 38 50% 45%;
-    --accent-foreground: 40 40% 98%;
-
-    --destructive: 0 60% 45%;
-    --destructive-foreground: 40 40% 98%;
-
-    --border: 25 25% 22%;
-    --input: 25 25% 22%;
-    --ring: 38 55% 55%;
-
-    --cream: 25 30% 18%;
-    --cream-dark: 25 25% 14%;
-    --brown-light: 35 30% 55%;
-    --brown-dark: 40 35% 90%;
-    --gold: 38 60% 55%;
-    --gold-muted: 38 30% 35%;
-
-    --sidebar-background: 25 40% 8%;
-    --sidebar-foreground: 40 40% 95%;
-    --sidebar-primary: 38 55% 55%;
-    --sidebar-primary-foreground: 25 40% 10%;
-    --sidebar-accent: 25 30% 15%;
-    --sidebar-accent-foreground: 40 40% 95%;
-    --sidebar-border: 25 25% 18%;
-    --sidebar-ring: 38 55% 55%;
-  }
+     :root {
+        --background: 40 33% 97%;
+        --foreground: 25 30% 15%;
+        --card: 40 40% 95%;
+        --card-foreground: 25 30% 15%;
+        --popover: 40 40% 98%;
+        --popover-foreground: 25 30% 15%;
+        --primary: 25 45% 25%;
+        --primary-foreground: 40 40% 98%;
+        --secondary: 30 20% 88%;
+        --secondary-foreground: 25 30% 20%;
+        --muted: 35 25% 92%;
+        --muted-foreground: 25 15% 45%;
+        --accent: 35 55% 45%;
+        --accent-foreground: 40 40% 98%;
+        --destructive: 0 65% 50%;
+        --destructive-foreground: 40 40% 98%;
+        --border: 30 25% 85%;
+        --input: 30 25% 85%;
+        --ring: 25 45% 25%;
+        --radius: 0.5rem;
+    }
+    body {
+        @apply bg-background text-foreground antialiased;
+        font-family: 'Lato', sans-serif;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Playfair Display', serif;
+    }
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
 
-  body {
-    @apply bg-background text-foreground font-sans antialiased;
-    font-family: 'Lato', sans-serif;
-  }
+/* ✅ COMPONENTS (custom classes) */
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
-  }
+@layer components {
+    .section-padding {
+        @apply py-16 px-4;
+    }
+    @media (min-width: 768px) {
+        .section-padding {
+            @apply py-24 px-8;
+        }
+    }
 }
+
+
+/* ✅ UTILITIES */
 
 @layer utilities {
-  .font-display {
-    font-family: 'Playfair Display', serif;
-  }
-
-  .font-body {
-    font-family: 'Lato', sans-serif;
-  }
-
-  .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
-  }
-
-  .hover-lift {
-    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
-  }
-
-  .section-padding {
-    @apply py-16 md:py-24 px-4 md:px-8;
-  }
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .animate-fade-in {
+        animation: fade-in 0.8s ease forwards;
+    }
+    .animate-fade-in-up {
+        animation: fade-in 0.9s ease forwards;
+    }
 }

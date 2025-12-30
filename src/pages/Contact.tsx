@@ -24,15 +24,15 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 1000));
-    
+
     toast({
       title: "Message Sent!",
       description: "Thank you for contacting us. We'll get back to you soon.",
     });
-    
+
     setFormData({ name: "", email: "", phone: "", message: "" });
     setIsSubmitting(false);
   };
@@ -41,12 +41,12 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Visit Our Showroom",
-      details: ["123 Furniture Lane", "Design District, City 12345"],
+      details: ["18-A , East Laxmi Market, Gali No. 1, Laxmi Nagar, Delhi-110092 (Main Khureji Red Light)"],
     },
     {
       icon: Phone,
       title: "Call Us",
-      details: ["+1 (555) 123-4567", "+1 (555) 987-6543"],
+      details: ["+91 7409164070 , +91 7845576935 , +91 9355664070 (OFF.)"],
     },
     {
       icon: Mail,
@@ -63,7 +63,7 @@ const Contact = () => {
   return (
     <main className="min-h-screen">
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="pt-32 pb-16 bg-cream">
         <div className="container mx-auto px-4">
@@ -102,7 +102,7 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      placeholder="John Doe"
+                      placeholder="Johny"
                       className="bg-card"
                     />
                   </div>
@@ -132,7 +132,7 @@ const Contact = () => {
                     type="tel"
                     value={formData.phone}
                     onChange={handleChange}
-                    placeholder="+1 (555) 000-0000"
+                    placeholder="+91 (555) 000-0000"
                     className="bg-card"
                   />
                 </div>
@@ -177,7 +177,7 @@ const Contact = () => {
               <p className="text-muted-foreground mb-8 leading-relaxed">
                 Experience our furniture collection in person. Our expert consultants are ready to help you find the perfect pieces for your home.
               </p>
-              
+
               <div className="space-y-6">
                 {contactInfo.map((item) => (
                   <div key={item.title} className="flex gap-4">
@@ -194,14 +194,47 @@ const Contact = () => {
                 ))}
               </div>
 
+              {/* Map Section */}
+              <div className="mt-10 space-y-3">
+                <div className="rounded-lg overflow-hidden border border-border">
+                  <div className="aspect-video">
+                    <iframe
+                      title="MS21 Furnitures Location"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.719921!2d77.280742!3d28.639879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfa4f0b0f3b29%3A0x8c8c5e6d8cdb7e44!2sEast%20Laxmi%20Market%2C%20Laxmi%20Nagar%2C%20Delhi%20110092!5e0!3m2!1sen!2sin!4v1735560000000"
+                      className="w-full h-full"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                    />
+                  </div>
+                </div>
+
+                {/* Open in Google Maps */}
+                <a
+                  href="https://www.google.com/maps/dir/?api=1&destination=18-A+East+Laxmi+Market+Gali+No.+1+Laxmi+Nagar+Delhi+110092"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
+                >
+                  <MapPin size={16} />
+                  Open in Google Maps
+                </a>
+              </div>
+
+
               {/* Map Placeholder */}
               <div className="mt-10 rounded-lg overflow-hidden border border-border">
-                <div className="aspect-video bg-muted flex items-center justify-center">
-                  <div className="text-center text-muted-foreground">
-                    <MapPin size={48} className="mx-auto mb-2 opacity-50" />
-                    <p className="text-sm">Interactive Map</p>
-                    <p className="text-xs">123 Furniture Lane, Design District</p>
-                  </div>
+                <div className="aspect-video">
+                  <iframe
+                    title="MS21 Furnitures Location"
+                    src="https://www.google.com/maps?q=18-A%20East%20Laxmi%20Market%20Gali%20No.%201%20Laxmi%20Nagar%20Delhi%20110092&output=embed"
+                    className="w-full h-full"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
                 </div>
               </div>
             </div>
