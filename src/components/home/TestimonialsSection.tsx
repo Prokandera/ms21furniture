@@ -4,20 +4,20 @@ const testimonials = [
   {
     name: "Yash Arora",
     role: "Interior Designer",
-    content: "MS21 Furnitures exceeded all my expectations. The quality of their pieces is outstanding, and the customer service was impeccable. My clients absolutely love the furniture we've selected.",
+    content: "MS21 Furniture exceeded all my expectations. The quality of their pieces is outstanding, and the customer service was impeccable. My clients absolutely love the furniture we've selected.",
     rating: 5,
   },
   {
     name: "Hardik Chadha",
     role: "Homeowner",
-    content: "We furnished our entire living room with MS21 Furnitures, and the transformation is incredible. The craftsmanship is evident in every detail. Worth every penny!",
+    content: "We furnished our entire living room with MS21 Furniture, and the transformation is incredible. The craftsmanship is evident in every detail. Worth every penny!",
     rating: 5,
     image: "",
   },
   {
     name: "Ali Naqvi",
     role: "Architect",
-    content: "The attention to detail and commitment to quality at MS21 Furnitures is remarkable. They've become my go-to recommendation for all my residential projects.",
+    content: "The attention to detail and commitment to quality at MS21 Furniture is remarkable. They've become my go-to recommendation for all my residential projects.",
     rating: 5,
     image: "",
   },

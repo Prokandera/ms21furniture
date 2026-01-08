@@ -38,7 +38,7 @@ const About = () => {
               Our Story
             </p>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 opacity-0 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-              About MS21 Furnitures
+              About MS21 Furniture
             </h1>
             <p className="text-muted-foreground text-lg leading-relaxed opacity-0 animate-fade-in" style={{ animationDelay: "0.5s" }}>
               For over two decades, we've been transforming houses into homes with our exquisite furniture collections. Our passion for quality and design drives everything we do.
@@ -60,7 +60,7 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  MS21 Furnitures was founded with a simple yet powerful vision: to create furniture that brings joy and comfort to every home. What started as a small workshop has grown into a beloved destination for discerning homeowners and design professionals alike.
+                  MS21 Furniture was founded with a simple yet powerful vision: to create furniture that brings joy and comfort to every home. What started as a small workshop has grown into a beloved destination for discerning homeowners and design professionals alike.
                 </p>
                 <p>
                   Our journey began when our founders, passionate artisans with decades of experience, decided to combine traditional craftsmanship with contemporary design. This unique approach has become the hallmark of our brand.
@@ -74,7 +74,7 @@ const About = () => {
               <div className="relative">
                 <img
                   src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=2070&auto=format&fit=crop"
-                  alt="MS21 Furnitures showroom"
+                  alt="MS21 Furniture showroom"
                   className="rounded-lg shadow-xl"
                 />
                 <div className="absolute -bottom-6 -left-6 bg-primary text-primary-foreground p-6 rounded-lg shadow-lg hidden md:block">
@@ -94,7 +94,7 @@ const About = () => {
             <div>
               <img
                 src="https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?q=80&w=2070&auto=format&fit=crop"
-                alt="Craftsmanship at MS21 Furnitures"
+                alt="Craftsmanship at MS21 Furniture"
                 className="rounded-lg shadow-xl"
               />
             </div>
@@ -110,7 +110,7 @@ const About = () => {
                   Our mission is to create furniture that not only beautifies your space but also enhances your daily life. We believe that great furniture should be both a pleasure to behold and a joy to use.
                 </p>
                 <p>
-                  We're committed to sustainable practices, working with responsibly sourced materials and implementing eco-friendly manufacturing processes. Quality and environmental responsibility go hand in hand at MS21 Furnitures.
+                  We're committed to sustainable practices, working with responsibly sourced materials and implementing eco-friendly manufacturing processes. Quality and environmental responsibility go hand in hand at MS21 Furniture.
                 </p>
               </div>
             </div>

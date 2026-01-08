@@ -33,7 +33,7 @@ const WhyChooseUsSection = () => {
             Why Choose Us
           </p>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            The MS21 Furnitures Promise
+            The MS21 Furniture Promise
           </h2>
           <p className="text-muted-foreground text-lg">
             We're committed to delivering exceptional furniture and an unparalleled shopping experience

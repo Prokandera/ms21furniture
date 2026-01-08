@@ -199,7 +199,7 @@ const Contact = () => {
                 <div className="rounded-lg overflow-hidden border border-border">
                   <div className="aspect-video">
                     <iframe
-                      title="MS21 Furnitures Location"
+                      title="MS21 Furniture Location"
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.719921!2d77.280742!3d28.639879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfa4f0b0f3b29%3A0x8c8c5e6d8cdb7e44!2sEast%20Laxmi%20Market%2C%20Laxmi%20Nagar%2C%20Delhi%20110092!5e0!3m2!1sen!2sin!4v1735560000000"
                       className="w-full h-full"
                       style={{ border: 0 }}
@@ -227,7 +227,7 @@ const Contact = () => {
               <div className="mt-10 rounded-lg overflow-hidden border border-border">
                 <div className="aspect-video">
                   <iframe
-                    title="MS21 Furnitures Location"
+                    title="MS21 Furniture Location"
                     src="https://www.google.com/maps?q=18-A%20East%20Laxmi%20Market%20Gali%20No.%201%20Laxmi%20Nagar%20Delhi%20110092&output=embed"
                     className="w-full h-full"
                     style={{ border: 0 }}
